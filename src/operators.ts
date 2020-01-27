@@ -51,7 +51,8 @@ newObs.subscribe((x: any) => addItem(x));*/
     .subscribe((x: any) => addItem(x))
 */
 
-// SkipUntil op. =>
+// SkipUntil op. => Allows an observable to emit values only after
+// a second observer starts emitting its values
 var observable1 = Observable.create((data: any) => {
     var i = 1;
     // observable1 will emit values every second
